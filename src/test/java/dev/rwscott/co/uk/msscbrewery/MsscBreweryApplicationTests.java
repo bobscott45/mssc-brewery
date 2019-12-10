@@ -1,10 +1,10 @@
-package dev.rwscott.co.uk.mmscbrewery;
+package dev.rwscott.co.uk.msscbrewery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MmscBreweryApplicationTests {
+class MsscBreweryApplicationTests {
 
 	@Test
 	void contextLoads() {

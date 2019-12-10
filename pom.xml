@@ -11,7 +11,7 @@
 	<groupId>dev.rwscott.co.uk</groupId>
 	<artifactId>mmsc-brewery</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mmsc-brewery</name>
+	<name>mssc-brewery</name>
 	<description>Project for Spring Boot Microservices course</description>
 
 	<properties>

@@ -1,13 +1,13 @@
-package dev.rwscott.co.uk.mmscbrewery;
+package dev.rwscott.co.uk.msscbrewery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MmscBreweryApplication {
+public class MsscBreweryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MmscBreweryApplication.class, args);
+		SpringApplication.run(MsscBreweryApplication.class, args);
 	}
 
 }
