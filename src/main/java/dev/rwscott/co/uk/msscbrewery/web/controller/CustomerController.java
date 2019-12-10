@@ -2,7 +2,6 @@ package dev.rwscott.co.uk.msscbrewery.web.controller;
 
 import dev.rwscott.co.uk.msscbrewery.service.CustomerService;
 import dev.rwscott.co.uk.msscbrewery.web.model.CustomerDto;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
