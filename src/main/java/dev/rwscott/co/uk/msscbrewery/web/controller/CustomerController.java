@@ -21,9 +21,9 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<CustomerDto> getCustomer(@PathVariable UUID id) {
-        CustomerDto customerDto = customerService.getCustomerById(id);
+    @GetMapping("/{customerId}")
+    public ResponseEntity<CustomerDto> getCustomer(@PathVariable UUID customerId) {
+        CustomerDto customerDto = customerService.getCustomerById(customerId);
         ResponseEntity<CustomerDto> responseEntity = new ResponseEntity<>(customerDto, HttpStatus.OK);
         return responseEntity;
     }
