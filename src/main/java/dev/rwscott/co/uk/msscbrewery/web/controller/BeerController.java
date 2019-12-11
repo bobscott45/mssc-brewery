@@ -3,6 +3,7 @@ package dev.rwscott.co.uk.msscbrewery.web.controller;
 
 import dev.rwscott.co.uk.msscbrewery.service.BeerService;
 import dev.rwscott.co.uk.msscbrewery.web.model.BeerDto;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,5 +26,13 @@ public class BeerController {
                 beerService.getBeerById(UUID.randomUUID()),
                 HttpStatus.OK
         );
+    }
+
+    @PostMapping
+    public ResponseEntity<Void> handlePost(@RequestBody BeerDto beerDto) {
+        BeerDto savedDto = beerService.saveNewBeer(beerDto);
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("Location", "/api/v1/beer/" + savedDto.getId().toString());
+        return new ResponseEntity(headers, HttpStatus.CREATED);
     }
 }
